@@ -16,4 +16,17 @@
 
 @implementation LSITipController
 
+- (instancetype)init
+{
+    if (self = [super init]) {
+        _internalTips = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
+- (NSArray<LSITip *> *)tips
+{
+    return _internalTips.copy;
+}
+
 @end
