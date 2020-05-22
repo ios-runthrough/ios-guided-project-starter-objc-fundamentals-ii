@@ -21,6 +21,10 @@
 {
     if (self = [super init]) {
         _internalTips = [[NSMutableArray alloc] init];
+        
+#ifdef DEBUG
+        [self addTestData];
+#endif
     }
     return self;
 }
