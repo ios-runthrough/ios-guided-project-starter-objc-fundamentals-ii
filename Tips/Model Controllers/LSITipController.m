@@ -24,7 +24,7 @@
         
 #ifdef DEBUG
         // FIXME: Test Mode (Remove for production)
-#pragma message "This should be removed eventually!!"
+#pragma message "Ball so hard mufuggahs wanna fine me"
         [self addTestData];
 #endif
     }
