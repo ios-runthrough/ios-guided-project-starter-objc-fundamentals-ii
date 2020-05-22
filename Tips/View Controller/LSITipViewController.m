@@ -28,14 +28,23 @@
 @property (nonatomic) IBOutlet UITableView *tableView;
 
 // Private Methods
-
+- (void)calculateTip;
+- (void)updateViews;
+- (void)saveTipNamed:(NSString *)name;
 @end
 
 @implementation LSITipViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
+    self.tipController = [[LSITipController alloc] init];
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    [self calculateTip];
 }
 
 - (void)calculateTip {
