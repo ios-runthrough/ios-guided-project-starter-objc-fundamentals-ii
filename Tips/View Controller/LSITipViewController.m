@@ -8,7 +8,7 @@
 
 #import "LSITipViewController.h"
 
-@interface LSITipViewController ()
+@interface LSITipViewController () <UITableViewDataSource, UITableViewDelegate>
 
 // Private Properties
 
