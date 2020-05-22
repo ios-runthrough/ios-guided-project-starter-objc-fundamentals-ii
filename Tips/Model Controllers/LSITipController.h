@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class LSITip;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LSITipController : NSObject
+
+@property (nonatomic, readonly, copy) NSArray<LSITip *> *tips;
 
 @end
 
