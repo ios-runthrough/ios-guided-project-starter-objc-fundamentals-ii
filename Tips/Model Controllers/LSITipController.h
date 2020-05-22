@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LSITipController : NSObject
 
 @property (nonatomic, readonly, copy) NSArray<LSITip *> *tips;
+@property (nonatomic, readonly) NSUInteger tipCount;
+
+- (void)addTip:(LSITip *)aTip;
+
+- (LSITip *)tipAtIndex:(NSUInteger)index;
 
 @end
 
